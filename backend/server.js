@@ -11,7 +11,7 @@ app.use(express.json());
 app.use('/api/auth', authRoutes);
 app.use('/api/urls', urlRoutes);
 
-mongoose.connect('mongodb://localhost:27017/urlshortener', {
+mongoose.connect('mongodb+srv://guvi:guvi@guvi.qgrirnt.mongodb.net/', {
 
 }).then(() => console.log('Database connected'));
 
